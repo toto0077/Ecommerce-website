@@ -1,0 +1,184 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    list-style: none;
+}
+header {
+    background-image: url("/img/banner.webp");
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+h1 {
+    color: rgb(71, 83, 72);
+    font-size: 80px;
+    font-family: "Jersey 25", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header img {
+    width: 100%;
+    height: 300px;
+}
+
+nav img {
+    height: 250px;
+    margin-left: 650px;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 500px;
+}
+
+main {
+    padding-bottom: 30px;
+}
+
+main section {
+    padding: 20px 0;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+main section h2 {
+    text-align: center;
+    font-size: 28px;
+    margin: 15px;
+}
+
+main section article {
+    width: 25%;
+    background-color: white;
+    border: 1px solid grey;
+    margin: 5px;
+}
+
+main section article img {
+    width: 100%;
+    height: 400px;
+    padding: 10px;
+}
+
+main section article h4 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+main section .productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 30px;
+}
+
+main section .productos article {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+}
+
+main section .producto h4 {
+    font-size: 14px;
+}
+
+.productos span {
+    color: rgb(124, 196, 15);
+
+}
+
+main section .producto button {
+    background-color: rgb(50, 48, 48);
+    color: white;
+    padding: 4px;
+}
+
+main section .ofertas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 30px;
+}
+
+main section .ofertas article {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+}
+
+.buzoverde {
+    grid-area: 1/1/4/3;
+}
+
+.ofertas span {
+    text-decoration:line-through;
+    font-style: italic;
+}
+
+.ofertas h4 {
+    color: rgb(124, 196, 15);
+}
+
+footer {
+    background-color: rgb(16, 91, 144);
+    color: white;
+}
+
+footer section {
+    text-align: center;
+}
+
+footer h3 {
+    text-decoration: none;
+}
+
+footer .derechos {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.derechos p {
+    margin: 20px;
+}
+
+i {
+    font-size: 30px;
+}
+
+footer p {
+    text-align: center;
+    margin: 10px;
+    font-size: 15px;
+}
+
+@media(max-width: 400px) {
+main section .productos {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+}
+}
